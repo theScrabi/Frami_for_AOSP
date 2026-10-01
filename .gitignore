@@ -1,0 +1,13 @@
+# build output
+build/
+
+# generated files from earlier manual builds
+de/*.combined
+de/*.dict
+de/rejected_by_hunspell.txt
+
+# local test material, not part of the project
+en/
+*.zip
+ui.xml
+__pycache__/

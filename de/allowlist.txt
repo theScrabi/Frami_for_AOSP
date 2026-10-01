@@ -1,0 +1,34 @@
+# Words hunspell rejects but which should be in the dictionary.
+# Write them with their correct casing; frequency is taken from de_full_frequency.txt.
+hey
+ok
+ne
+wär
+hm
+hmm
+wow
+naja
+nen
+nem
+ner
+uh
+sowas
+sorry
+hä
+bye
+jo
+yo
+nix
+mhm
+heut
+ey
+ooh
+pst
+aah
+bla
+tschuldigung
+rausfinden
+rausgefunden
+würd
+hätt
+Highschool
