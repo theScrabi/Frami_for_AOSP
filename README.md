@@ -2,7 +2,7 @@
 
 A German main dictionary in the AOSP binary `.dict` format. It works with
 [HeliBoard](https://github.com/Helium314/HeliBoard) and other keyboards based
-on the AOSP LatinIME (OpenBoard, FUTO Keyboard, …), both for suggestions and
+on the AOSP LatinIME (OpenBoard, …), both for suggestions and
 for the system spell checker.
 
 It combines word frequencies from real-world text with the Hunspell German
@@ -10,10 +10,11 @@ dictionary to filter out misspellings and junk.
 
 ## Building
 
-Requirements: `bash`, `python3`, `hunspell` and a Java runtime (`java`).
+Requirements: GNU Make (4.3 or newer), `python3`, `hunspell` and a Java
+runtime (`java`).
 
 ```sh
-./build.sh
+make
 ```
 
 This produces:
@@ -26,9 +27,10 @@ This produces:
 Both files contain the same words and differ only in the locale written
 to their header.
 
-Intermediate files (`build/main_*.combined`, the text form of the dictionary)
-and `build/rejected_by_hunspell.txt` (every word that was dropped, with its
-count) are kept for inspection.
+The intermediate files `build/main_*.combined` (the text form of the
+dictionary) and `build/rejected_by_hunspell.txt` (every word that was
+dropped, with its count) are kept for inspection. `make clean` removes
+them and keeps the dictionaries; `make distclean` removes all of `build/`.
 
 Set `SOURCE_DATE_EPOCH` to get a reproducible header date.
 
@@ -64,7 +66,7 @@ Languages → Spell checker.
 4. Maps word counts to AOSP frequencies 1–255 on a logarithmic scale.
    Nominalized infinitives (*das Essen*) get a lower frequency than the
    verb (*essen*).
-5. Writes the AOSP "combined" wordlist format. `build.sh` then compiles it
+5. Writes the AOSP "combined" wordlist format. `make` then compiles it
    to a binary dictionary with `dicttool_aosp makedict`.
 
 ## Sources and credits
