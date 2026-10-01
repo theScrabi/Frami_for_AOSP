@@ -2,7 +2,7 @@
 
 A German main dictionary in the AOSP binary `.dict` format. It works with
 [HeliBoard](https://github.com/Helium314/HeliBoard) and other keyboards based
-on the AOSP LatinIME (FlorisBoard, AnySoftKeyboard, …), both for suggestions and
+on the AOSP LatinIME, both for suggestions and
 for the system spell checker.
 
 It combines word frequencies from real-world text with the Hunspell German
