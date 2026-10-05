@@ -77,8 +77,8 @@ Languages → Spell checker.
   (`packages/inputmethods/LatinIME/tools/dicttool`). They are included
   here so the dictionary can be built without an AOSP checkout. They are
   licensed under the Apache License 2.0.
-- **`de/de_DE.dic`, `de/de_DE.aff`** were taken from the Fedora
-  `hunspell-de` package (version 20240224). They are based on
+- **`de/de_DE.dic`, `de/de_DE.aff`** were taken from the [Fedora
+  `hunspell-de` package (version 20240224).](http://ftp.fau.de/fedora/linux/releases/44/Everything/x86_64/os/Packages/h/hunspell-de-20240224-5.fc44.noarch.rpm) They are based on
   [igerman98](https://www.j3e.de/ispell/igerman98/) by Björn Jacke, with
   the *frami* extension by Franz Michael Baumann, and are licensed under
   GPL-2.0 or GPL-3.0.
