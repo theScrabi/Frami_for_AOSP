@@ -1,3 +1,7 @@
+> [!WARNING]  
+> I compared this repo with the [HeliBoard experimental dictionary](https://codeberg.org/Helium314/aosp-dictionaries/src/branch/main/dictionaries_experimental/main_de.dict). The HeliBoard one's performs better.
+> So I archived this in favor of HeliBoard one's.
+
 # German dictionary for AOSP keyboards derived from Hunspell
 
 A German main dictionary in the AOSP binary `.dict` format. It works with
